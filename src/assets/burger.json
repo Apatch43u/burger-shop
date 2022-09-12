@@ -1,0 +1,132 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/j/a/jazznight.jpg",
+    "title": "Jazz Night Burger",
+    "types": [1],
+    "sizes": [1, 2, 3],
+    "price": 5,
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/b/a/baconator.jpg",
+    "title": "Bacon maker",
+    "types": [0, 1],
+    "sizes": [1, 2],
+    "price": 5.6,
+    "category": 1,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/e/n/enzo_2_1.jpg",
+    "title": "Enzo Ferrari",
+    "types": [0, 1],
+    "sizes": [1, 2, 3],
+    "price": 5.4,
+    "category": 1,
+    "rating": 3
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/l/i/littlebig.jpg",
+    "title": "Little Big",
+    "types": [0, 1],
+    "sizes": [1],
+    "price": 2.5,
+    "category": 2,
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/k/c/kcl.jpg",
+    "title": "Burger with shrimp",
+    "types": [0, 1],
+    "sizes": [1, 2, 3],
+    "price": 8.1,
+    "category": 2,
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/b/3/b3t.jpg",
+    "title": "Big bacon maker",
+    "types": [0, 1],
+    "sizes": [2, 3],
+    "price": 10.49,
+    "category": 2,
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/a/a/aas.jpg",
+    "title": "Chillout Burger",
+    "types": [0, 1],
+    "sizes": [1, 2, 3],
+    "price": 5.39,
+    "category": 3,
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/e/l/elc.jpg",
+    "title": "El Clasico",
+    "types": [0, 1],
+    "sizes": [1, 3],
+    "price": 5.39,
+    "category": 4,
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/p/e/pepp.jpg",
+    "title": "PEPPERenko",
+    "types": [0, 1],
+    "sizes": [1, 2, 3],
+    "price": 5.39,
+    "category": 4,
+    "rating": 4
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/e/s/escobar.jpg",
+    "title": "Pablo Escobar",
+    "types": [0, 1],
+    "sizes": [3],
+    "price": 7,
+    "category": 5,
+    "rating": 4
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/b/e/bec2.jpg",
+    "title": "Bacon god",
+    "types": [0, 1],
+    "sizes": [2, 3],
+    "price": 8.1,
+    "category": 5,
+    "rating": 4
+  },
+  {
+    "id": 11,
+    "imageUrl": "https://images.bolt.eu/store/2021/2021-10-29/0037d311-72a7-4c10-9c27-88a6a043dc7e.jpeg",
+    "title": "Burj Khalifa",
+    "types": [0, 1],
+    "sizes": [12],
+    "price": 26.8,
+    "category": 5,
+    "rating": 4
+  },
+  {
+    "id": 12,
+    "imageUrl": "https://contrabanda.kiev.ua/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/c/h/chik.jpg",
+    "title": "Shegi burger",
+    "types": [0, 1],
+    "sizes": [1, 2, 3],
+    "price": 5.18,
+    "category": 3,
+    "rating": 4
+  }
+]
