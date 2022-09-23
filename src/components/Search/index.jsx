@@ -1,8 +1,32 @@
 import React from 'react';
+import debounce from 'lodash.debounce';
 import cl from './Search.module.scss';
-import { AppContext } from '../../App';
+import { setSearchValue } from '../../redux/slices/filterSlice';
+import { useDispatch } from 'react-redux';
+
 const Search = () => {
-  const { searchValue, setSearchValue } = React.useContext(AppContext);
+  const dispatch = useDispatch();
+  const [value, setValue] = React.useState('');
+
+  const inputRef = React.useRef();
+
+  const onClickClear = () => {
+    dispatch(setSearchValue(''));
+    setValue('');
+    inputRef.current.focus();
+  };
+
+  const updateSearchValue = React.useCallback(
+    debounce((str) => {
+      dispatch(setSearchValue(str));
+    }, 350),
+    [],
+  );
+
+  const onChangeInput = (event) => {
+    setValue(event.target.value);
+    updateSearchValue(event.target.value);
+  };
 
   return (
     <div className={cl.root}>
@@ -13,14 +37,15 @@ const Search = () => {
         </g>
       </svg>
       <input
-        value={searchValue}
-        onChange={(event) => setSearchValue(event.target.value)}
+        ref={inputRef}
+        value={value}
+        onChange={onChangeInput}
         className={cl.input}
         placeholder='Burger search...'
       />
-      {searchValue && (
+      {value && (
         <svg
-          onClick={() => setSearchValue('')}
+          onClick={onClickClear}
           className={cl.clear}
           height='48'
           viewBox='0 0 48 48'

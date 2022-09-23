@@ -29,11 +29,22 @@ body {
   &__title {
     margin: 35px 0;
   }
+  &__error {
+    padding: 150px;
+    text-align: center;
 
+    h2{
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+    p{
+      font-size: 22px;
+    }
+  }
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 11px;
 
     @media (max-width: 1390px) {
@@ -322,7 +333,7 @@ body {
 
       .pay-btn {
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 620;
         width: 210px;
         padding: 16px;
       }
@@ -330,17 +341,18 @@ body {
   }
 
   &--empty {
-    margin: 0 auto;
-    width: 560px;
+    margin: 80px auto;
+    width: 600px;
     text-align: center;
 
     h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 145.4%;
       letter-spacing: 0.01em;
       color: #777777;
@@ -353,7 +365,8 @@ body {
 
     img {
       display: block;
-      width: 300px;
+      width: 200px;
+      height: 200px;
       margin: 45px auto 60px;
     }
 

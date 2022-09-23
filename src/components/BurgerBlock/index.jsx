@@ -1,8 +1,30 @@
 import React, { useState } from 'react';
-function BurgerBlock({ price, title, imageUrl, sizes, types }) {
-  const typeNames = ['Traditional', 'Black'];
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem } from '../../redux/slices/cartSlice';
+
+const typeNames = ['Traditional', 'Black'];
+
+function BurgerBlock({ id, price, title, imageUrl, sizes, types, rating, category }) {
+  const dispatch = useDispatch();
+  const cartItem = useSelector((state) => state.cartSlice.items.find((obj) => obj.id === id));
+
   const [activeType, setActiveType] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
+
+  const addedCount = cartItem ? cartItem.count : 0;
+
+  const onClickAdd = () => {
+    const item = {
+      id,
+      title,
+      price,
+      imageUrl,
+      type: typeNames[activeType],
+      size: sizes[activeSize],
+    };
+    dispatch(addItem(item));
+  };
+
   return (
     <div className='burger-block-wrapper'>
       <div className='burger-block'>
@@ -34,7 +56,7 @@ function BurgerBlock({ price, title, imageUrl, sizes, types }) {
         </div>
         <div className='burger-block__bottom'>
           <div className='burger-block__price'>from {price} $</div>
-          <button className='button button--outline button--add'>
+          <button onClick={onClickAdd} className='button button--outline button--add'>
             <svg
               width='12'
               height='12'
@@ -48,7 +70,7 @@ function BurgerBlock({ price, title, imageUrl, sizes, types }) {
               />
             </svg>
             <span>Ad</span>
-            <i>0</i>
+            {addedCount > 0 && (<i>{addedCount}</i>)}
           </button>
         </div>
       </div>
