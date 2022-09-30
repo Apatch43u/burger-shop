@@ -1,0 +1,1 @@
+export const burgerHref: string = 'https://63173fb782797be77ff7690f.mockapi.io/items/';

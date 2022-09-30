@@ -33,11 +33,11 @@ body {
     padding: 150px;
     text-align: center;
 
-    h2{
-        font-size: 64px;
-        margin-bottom: 20px;
+    h2 {
+      font-size: 64px;
+      margin-bottom: 20px;
     }
-    p{
+    p {
       font-size: 22px;
     }
   }
@@ -80,8 +80,8 @@ body {
     }
     @media (max-width: 390px) {
       .categories {
-        ul{
-          li{
+        ul {
+          li {
             padding: 8px 20px;
           }
         }
@@ -221,6 +221,22 @@ body {
         svg {
           path:first-of-type {
             display: none;
+          }
+        }
+
+        &--disabled {
+          opacity: 0.5;
+          border-color: #787878;
+
+          &:hover {
+            background-color: transparent;
+            svg path {
+              fill: #787878;
+            }
+          }
+
+          svg path {
+            fill: #787878;
           }
         }
       }
